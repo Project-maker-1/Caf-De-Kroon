@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fdf6ec;  
+    font-family: 'Poppins', sans-serif;
+    padding: 40px;
+}
+
+.highlights {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.highlight-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.highlight-card span {
+    font-size: 40px; 
+}
+
+.highlight-card h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.highlight-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+.navbar {
+    background-color: #bc6b32;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px;
+    margin: -40px -40px 40px -40px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #fdf6ec;
+    opacity: 0.8;
+}
+
+.nav-logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.nav-icon {
+    position: absolute;
+    left: 160px;
+    max-width: 100px;
+    height: auto;
+}
+
+.hero {
+    height: 60vh;
+    background-color: #d89565; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.hero-icon {
+    position: absolute;
+    left: 40px;
+    max-width: 300px;
+}
+
+.hero h1 {
+    color: #fff;
+}
+
+.hero p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.hero-btn {
+    display: inline-block;
+    background-color: #bc6b32;
+    color: #ffffff;
+    padding: 14px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #a05828;
+    transform: translateY(-5px);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #bc6b32;
+    padding: 20px 40px;
+    margin: 40px -40px -40px -40px; 
+    color: #000000;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.footer-section p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #ffffff;
+}
+
+.highlight-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.menu-section {
+    max-width: 900px;     
+    margin: 40px auto;   /* gecentreerd */
+    padding: 20px;
+}
+
+.menu-titel {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.menu-categorie {
+    font-size: 24px;
+    font-weight: 600;
+    color: #bc6b32;       /* oranje kleur van je café */
+    margin: 20px 0 10px 0;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* hoeveel kolommen? */
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.menu-item h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.prijs {
+    font-size: 18px;
+    font-weight: 700;
+    color: #bc6b32;
+}
+
+.contact-section {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+}
+
+.contact-section h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    color: #4b4747;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;            
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    outline: none; 
+}
+
+.contact-form textarea {
+    height: 140px;       
+    resize: none;         
+}
+
+.contact-form button {
+    display: inline-block;
+    background-color: #bc6b32;
+    color: #000000;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    border: none;    
+    cursor: pointer; 
+}
+
+.contact-form button:hover {
+    transform: translateY(-5px);  
+    background-color: #ca8e5d;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: 2px solid #bc6b32;
+}
+
+#menu-knop {
+    display: none;
+}
+
+@media (max-width: 640px) {
+    #menu-knop {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    #menu {
+        display: none;
+        flex-direction: column;
+    }
+    #menu.open {
+        display: flex;
+    }
+}
+
+@media (max-width: 640px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        margin: -20px -20px 20px -20px;
+    }
+
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+
+    .highlights {
+        flex-direction: column;
+    }
+
+
+    .hero {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-icon {
+        position: static;
+        max-width: 180px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+        margin: 20px -20px -20px -20px;
+    }
+}
+
+#naam-fout {
+    color: red;
+}

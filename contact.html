@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserveren - KapperEindhoven</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Maak een afspraak bij de beste kappers van Eindhoven. Makkelijk en snel.">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo">KapperEindhoven</div>
+        <button id="menu-knop">☰</button>
+        <ul id="menu" class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Over ons</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+<section class="contact-section">
+    <h1>Reserveer een tijdstip</h1>
+    <p>Vul het formulier in en we nemen snel contact met je op.</p>
+
+    <form class="contact-form" action="https://formspree.io/f/xjgnvavv" id="formulier" method="POST">
+        <input type="text" name="naam" placeholder="Jouw naam" id="naam">
+            <p id="naam-fout" class="text-red-500 hidden">
+            Vul je naam in
+            </p>
+        <input type="email" name="email" placeholder="Jouw emailadres">
+        <input type="date" name="datum">
+        <input type="number" name="personen" 
+            placeholder="Aantal personen" 
+            min="1" max="20">
+        <textarea name="bericht" placeholder="Jouw bericht"></textarea>
+        <button type="submit">Reserveer een plek</button>
+    </form>
+</section>
+
+    <footer class="footer">
+        <div class="footer-section">
+            <h3>Café De Kroon</h3>
+            <p>Voor het lekkerste eten van heel Eindhoven.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Openingstijden</h3>
+            <p>Maandag - Vrijdag: 09:00 - 20:00</p>
+            <p>Zaterdag: 09:00 - 18:00</p>
+            <p>Zondag: Gesloten</p>
+        </div>
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>📍 Stratumseind 14, Eindhoven</p>
+            <p>📞 040 - 123 4567</p>
+            <p>✉️ info@cafedeKroon.nl</p>
+        </div>
+    </footer>
+
+    <script src="cafedekroon.js"></script>
+    <script src="validatie.js"></script>
+
+</body>
+</html>
